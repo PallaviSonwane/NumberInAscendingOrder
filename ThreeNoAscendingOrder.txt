@@ -1,0 +1,27 @@
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+       System.out.println("enter 3 number");
+       int no1,no2,no3,temp;
+       no1=sc.nextInt();
+       no2=sc.nextInt();
+       no3=sc.nextInt();
+       if(no1>no2  ){
+           temp=no1;
+           no1=no2;
+           no2=temp;
+       }
+       if(no1>no3){
+           temp=no1;
+           no1=no3;
+           no3=temp;
+       }
+       if(no2>no3){
+           temp=no2;
+           no2=no3;
+           no3=temp;
+       }
+       System.out.println(no1+"\t"+no2+"\t"+no3);
+    }
+}
